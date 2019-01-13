@@ -1,0 +1,231 @@
+/* Color Palette 
+#F4E9CD Gin Fizz yes
+#524632 Dark liver (Horses) yes
+#AAACB0 Silver Chalice yes
+#F4FAFF Alice blue*/
+
+
+/* Global styles
+-------------------------*/
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Noto Serif', serif;
+    margin: 0;
+}
+
+h1, h2 {
+    font-family: 'Acme', sans-serif;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+h2 {
+    font-size: 40px;
+    margin-top: 0;
+}
+
+h3 {
+    margin: 0;  
+}
+
+a {
+    color:  #F4E9CD; 
+}
+
+a:hover {
+    text-decoration: none;
+    
+}
+
+.content-wrap {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 60px 50px;
+    overflow: hidden;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.btn {
+    text-decoration: none;
+    background: red;
+    color: #F4E9CD;
+    padding: 10px;
+    display: inline-block;
+}
+
+
+/* Header and Footer
+-------------------------*/
+header, footer {
+    background: #524632;
+    color: #F4E9CD;
+}
+
+/* Header */
+header {
+    padding-top: 50px;
+    position: relative;
+}
+
+.profile-img {
+    border-radius: 50%;
+}
+
+.download {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+header h1, header h2 {
+    color: #F4FAFF;
+    margin: 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+}
+
+.contact-info a {
+    padding: 20px;
+    display: inline-block;
+}
+
+.fab {
+    font-size: 30px;
+}
+
+/* Navigation 
+-------------------------*/
+nav {
+    width: 100%;
+    text-align: center;
+    background: white;
+    position: fixed;
+    top: 0;
+}
+
+.inline a {
+    display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 700;
+}
+
+.block a {
+    display: block;
+    padding: 5px 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 700;
+}
+
+nav a:hover {
+    color: red;
+}
+
+nav a.icon {
+    display: none;
+}
+
+
+/* Work Experience
+-------------------------*/
+.work {
+    background: #AAACB0;
+}
+
+.work .content-wrap {
+    padding-bottom: 0;
+}
+
+h3 ~ p {
+    margin: 0;
+}
+
+.job-description {
+    margin-bottom: 25px;
+}
+
+.job-description p:first-of-type {
+    margin-top: 0;
+}
+
+
+/* Education
+-------------------------*/
+.education {
+    background: linear-gradient(rgba(244, 233, 205, 0.3), rgba(244, 233, 205, 0.6)),
+                url(../_images/joanna-kosinska-129039-unsplash-extralarge.jpg) no-repeat fixed;
+    background-size: cover;
+}
+
+p + h3 {
+    margin-top: 30px;
+}
+
+
+/* @ Media Queries
+-------------------------*/
+@media (min-width: 970px) {
+    .col-narrow {
+        width: 30%;
+        float: left;
+        padding-right: 3%;
+        min-height: 125px;  
+    }
+    
+    .col-wide {
+        width: 70%;
+        float: left;
+        padding-left: 20px;
+        min-height: 125px;
+    }
+
+    .block a {
+        display: inline-block;
+        padding: 15px 20px;
+    }    
+}
+
+@media (max-width: 970px) {
+    header {
+        text-align: center;
+    }
+
+    .profile-img {
+        width: 200px;
+    }
+
+    .inline a {
+        display: none;
+    }
+
+    nav a.icon {
+        display: block;
+        position: fixed;
+        top: 5px;
+        right: 5px;
+        color: #F4E9CD;
+    }
+
+    .work .content-wrap {
+        padding-bottom: 30px;
+    }
+}
